@@ -1,0 +1,287 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+h1{ font-size: 3.5em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;}
+ul{ list-style: none;}
+li{ font-size: 1.25em;}
+img{
+    width: 100%;;
+    max-width: 350px;
+    height: 300px;
+    border-radius: 10px;
+    
+}
+
+
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+.container2{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.color-acento{ color:rgb(6, 66, 86); }
+
+header{
+    background-color: rgb(245,245,245);
+    
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: blueviolet;
+    font-size: 1.6em;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: blueviolet;
+}
+
+#imagen{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.288),
+        rgba(0, 0, 0, 0)
+    )
+    ,url("Indigena.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#imagen h1{
+    color: white;
+}
+
+
+#Inicio .container{
+    text-align: center;
+    padding: 150px 12px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+}
+
+#Historia{
+    color: white;
+    text-align: center;
+    background-color: #F5F5DC;
+}
+
+#Historia .container{
+    padding: 150px 12px;
+}
+
+#Historia h2{
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+#Historia p{
+   text-align: justify;
+    color: black;
+}
+
+#Histoira .carta{
+    background-position: center ;
+    padding: 10px 10px;
+    margin: 10px;
+    border-radius: 15px;
+    
+}
+
+#Cultura .container{
+    text-align: center;
+    padding: 40px 12px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+#Cultura .container2{
+    text-align: center;
+    padding: 40px 12px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+#Cultura h3{
+    margin: 35px;
+    text-align: center;
+}
+
+
+
+
+
+footer{
+    background-color: rgb(230,230,230);
+}
+
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: rgb(100,100,100);
+}
+
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media (min-width: 850px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #imagen h1{
+        font-size: 5em;
+    }
+
+    #Inicio .container{
+        display: flex;
+        flex-direction: row;
+    }
+
+    #Inicio .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #Inicio .img{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #Inicio h2{
+        margin-top: 0px;
+    }
+
+    #Historia .medio{
+        display: flex;
+        justify-content: center;
+        padding: 15px;
+    }
+
+    #Historia p{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #Historia h2{
+        font-size: 4em;
+    }
+
+    #Historia h3{
+        margin-top: 0;
+        color: black;
+        font-weight: 900;
+    }
+
+    #Historia .carta{
+        padding: 50px;
+        background-size: cover 100%;
+        background-repeat: repeat;
+        background-position-y: 0;
+        background-image: url(https://png.pngtree.com/background/20211215/original/pngtree-parchment-beige-background-picture-image_1504877.jpg);
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+        border-radius: 10px;
+    }
+
+    #Cultura .container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    #Cultura .container2{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+
+
+
+    footer .container{
+        justify-content: flex-end;
+    }
+}
+
+@media (min-width: 1200px) {
+    #Cultura{
+        background-position-x: calc(100vw - 800px);
+    }
+}
