@@ -7,7 +7,7 @@ html{
 }
 
 body{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 0;
 }
 
@@ -34,6 +34,13 @@ img{
 .container2{
     max-width: 1400px;
     margin: auto;
+}
+.container3{
+    max-width: 1600px;
+    margin: auto ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
 }
 
 .color-acento{ color:rgb(6, 66, 86); }
@@ -100,7 +107,7 @@ header a:hover{
 
 #Inicio .container{
     text-align: center;
-    padding: 150px 12px;
+    padding: 80px 12px;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -114,12 +121,14 @@ header a:hover{
 }
 
 #Historia .container{
-    padding: 150px 12px;
+    padding: 80px 12px;
 }
 
 #Historia h2{
     margin-top: 0;
     font-size: 3.2em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
 }
 
 #Historia p{
@@ -156,11 +165,64 @@ header a:hover{
 #Cultura h3{
     margin: 35px;
     text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
 }
 
+#Rutas .container3{
+    padding: 30px 80px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
+}
+#Rutas h3{
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 
+}
+#Rutas .mapas{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#Rutas p{
+    color: #000;
+    font-weight: 500;
+}
+#Contribuciones .container{
+    padding: 30px 80px;
 
+}
+#Contribuciones .tierra{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#Contribuciones p{
+    color: #000;
+    font-weight: 500;
+}
+#Contribuciones h3{
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 
+}
+#Arte .container{
+    padding: 30px 80px;
+
+}
+#Arte .bailes{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#Arte h3{
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}#Arte p{
+    color: #000;
+    font-weight: 500;
+}
 
 footer{
     background-color: rgb(230,230,230);
@@ -271,9 +333,6 @@ footer .container{
         flex-wrap: wrap;
         justify-content: space-around;
     }
-
-
-
 
     footer .container{
         justify-content: flex-end;
